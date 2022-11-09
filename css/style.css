@@ -170,11 +170,16 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 }
 /*============== END  breadcrumbs =============*/
 /* =================Drawing===================== */
-.drawing_section {
+.drawing_section .drawing_list {
   padding: 40px 0px;
+}
+.drawing_section .list_one {
+  border-bottom: 1px solid #f0f0f0;
 }
 .drawing_section .drawing_img img {
   width: 100%;
+  padding: 20px;
+  border: 1px solid #e1e2e4;
 }
 .drawing_section .drawing_text {
   padding: 20px 30px;
@@ -194,10 +199,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   line-height: 21px;
   margin-bottom: 28px;
 }
-.drawing_section .drawing_text .price_tag p {
-  font-family: Montserrat-Bold;
-  font-size: 22px;
-}
+
 .drawing_section .drawing_text .variant_btn button {
   background: #000000;
   border: 1px solid #000000;
@@ -244,9 +246,6 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   }
   .drawing_section .drawing_text .title_top h3 {
     font-size: 22px;
-  }
-  .drawing_section .drawing_text .price_tag p {
-    font-size: 20px;
   }
   .header_inner {
     flex-direction: column;
