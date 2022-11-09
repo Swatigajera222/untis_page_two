@@ -1,0 +1,115 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(..//font/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(..//font/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(..//font/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(..//font/Montserrat-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: ease-in-out 0.3s;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat-Regular;
+  color: #111111;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* =================Drawing===================== */
+.drawing_section {
+  padding: 40px 0px;
+}
+.drawing_section .drawing_img img {
+  width: 100%;
+}
+.drawing_section .drawing_text {
+  padding: 20px 30px;
+}
+.drawing_section .drawing_text .title_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.drawing_section .drawing_text .title_top h3 {
+  font-family: Montserrat-Medium;
+  font-size: 42px;
+}
+.drawing_section .drawing_text .product_dest {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 28px;
+}
+.drawing_section .drawing_text .price_tag p {
+  font-family: Montserrat-Bold;
+  font-size: 22px;
+}
+.drawing_section .drawing_text .variant_btn button {
+  background: #000000;
+  border: 1px solid #000000;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 0.813rem;
+  line-height: 1.125;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  padding: 1.063rem 1.2rem;
+  min-width: 100px;
+}
+.drawing_section .drawing_text .variant_btn button img {
+  margin-right: 9px;
+}
+/* ================== END Drawing============= */
+
+/* ================== END main_content ============*/
+
+@media only screen and (max-width: 991px) {
+  .drawing_section .drawing_text {
+    padding: 10px;
+  }
+  .drawing_section .drawing_text .title_top h3 {
+    font-size: 25px;
+  }
+  .drawing_section .drawing_text .product_dest {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .drawing_section .drawing_text {
+    padding: 30px 0px 0px;
+  }
+  .drawing_section .drawing_text .product_dest {
+    margin-bottom: 18px;
+  }
+  .drawing_section .drawing_text .title_top h3 {
+    font-size: 22px;
+  }
+  .drawing_section .drawing_text .price_tag p {
+    font-size: 20px;
+  }
+}
